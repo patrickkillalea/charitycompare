@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Minimal BubbleTree Demo</title>
+        <script type="text/javascript" src="./lib/jquery-1.5.2.min.js"></script>
+        <script type="text/javascript" src="./lib/jquery.history.js"></script>
+        <script type="text/javascript" src="./lib/raphael.js"></script>
+        <script type="text/javascript" src="./lib/vis4.js"></script>
+        <script type="text/javascript" src="./lib/Tween.js"></script>
+        <script type="text/javascript" src="./build/bubbletree.js"></script>
+        <link rel="stylesheet" type="text/css" href="./build/bubbletree.css" />
+        <script type="text/javascript" src="./styles/cofog.js"></script>
+
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"/>
+
+        <script type="text/javascript">
+
+            $(function() {
+                new BubbleTree({
+                    data: data,
+                    container: '.bubbletree'
+                });
+            });
+
+
+
+            var data = {
+                label: "Trocaire",
+                amount: 10842000,
+                children: [{
+                        label: "Salaries & Staff costs",
+                        amount: 1133000
+                    }, {
+                        label: "24 hour Fast",
+                        amount: 327000
+                    }, {
+                        label: "Advertising & Publicity",
+                        amount: 1497000
+                    }, {
+                        label: "Commited Giving",
+                        amount: 374000
+                    }, {
+                        label: "Lenten Campaign",
+                        amount: 1201000
+                    }, {
+                        label: "Management & Admin",
+                        amount: 355000
+                    }
+                ]
+            };
+        </script>
+
+    </head>
+    <body>
+
+        <!--<div id = "content" class = 'container'>-->
+        <div class="bubbletree-wrapper">
+            <div class="bubbletree"></div>
+        </div>
+
+    </body>
+</html>

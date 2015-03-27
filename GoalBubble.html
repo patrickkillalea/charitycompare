@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Minimal BubbleTree Demo</title>
+        <script type="text/javascript" src="./lib/jquery-1.5.2.min.js"></script>
+        <script type="text/javascript" src="./lib/jquery.history.js"></script>
+        <script type="text/javascript" src="./lib/raphael.js"></script>
+        <script type="text/javascript" src="./lib/vis4.js"></script>
+        <script type="text/javascript" src="./lib/Tween.js"></script>
+        <script type="text/javascript" src="./build/bubbletree.js"></script>
+        <link rel="stylesheet" type="text/css" href="./build/bubbletree.css" />
+        <script type="text/javascript" src="./styles/cofog.js"></script>
+
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"/>
+
+        <script type="text/javascript">
+
+            $(function() {
+                new BubbleTree({
+                    data: data,
+                    container: '.bubbletree'
+                });
+            });
+
+
+
+            var data = {
+                label: "Goal",
+                amount: 1485481,
+                children: [{
+                        label: "Fundraising events & advertising",
+                        amount: 231328
+                    }, {
+                        label: "Premises, IT, Communication & supplies",
+                        amount: 36453
+                    }, {
+                        label: "Allocation of support costs",
+                        amount: 402006
+                    }, {
+                        label: "Staff renumeration & other costs",
+                        amount: 730191
+                    }, {
+                        label: "Travel & vehicle expenses",
+                        amount: 65598
+                    }, {
+                        label: "Professional fees and other costs",
+                        amount: 19905
+                    }
+                ]
+            };
+        </script>
+
+    </head>
+    <body>
+
+        <!--<div id = "content" class = 'container'>-->
+        <div class="bubbletree-wrapper">
+            <div class="bubbletree"></div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" href="compare.ico" />
+
+    <title>Irish Charity Comparison Site</title>
+
+    <!-- Bootstrap core CSS -->
+
+    <link href="css/jquery.mobile.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/navbar-fixed-top.css" rel="stylesheet" />
+    <link href="css/filtermenu.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <!-- Fixed navbar -->
+
+    <div id="content" class='container'>
+        <ul id="mainTabs" class="nav nav-tabs" data-tabs="tabs">
+            <li id="mainHomeTab" class="active"><a href="#home" data-toggle="tab"><h3>Home</h3></a>
+            </li>
+            <li id="mainCharitiesTab"><a href="#charities" data-toggle="tab"><h3>Charities</h3></a>
+            </li>
+            <li id="mainRatingTab"><a href="#ratingsystem" data-toggle="tab"><h3>Rating System</h3></a>
+            </li>
+            <li id="mainBlogTab"><a href="#blog" data-toggle="tab"><h3>Blog</h3></a>
+            </li>
+            <li id="mainAboutTab"><a href="#about" data-toggle="tab"><h3>About Us</h3></a>
+            </li>
+            <li id="mainConcernTab"><a href="#contact" data-toggle="tab"><h3>Contact</h3></a>
+            </li>
+            <li class="pull-right"><a><h3 id = "pName"></h3></a>
+            </li>
+        </ul>
+
+
+        <!-- Main Content Begin-->
+        <div id="mainTabsContent" class="tab-content">
+
+            <!-- Home Tab Begin-->
+            <div class="tab-pane active" id="home">
+
+                <div class="jumbotron">
+                    <h2>What's this?</h2>
+                    <p>We want to help Irish charities that operate in a responsible way by showing you how they spend their money.</p>
+                </div>
+
+                <div class="row text-center">
+                    <img src="./img/bubbleexample.png" class="center-block img-responsive" />
+
+                </div>
+
+                <div class="footer row text-center">
+                    Data visualisations by Open Knowledge
+                </div>
+
+
+                <h3>Top 5 Charities</h3>
+
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Charity</th>
+                                <th>Description</th>
+                                <th>Rating</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><a href="TrocaireBubble.html">Trocaire</a>
+                                </td>
+                                <td>Supporting people in the developing world to improve their lives</td>
+                                <td>
+                                    <img src="./img/rsz_5-stars.png" class="left-block img-responsive" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><a href="ConcernBubble.html">Concern</a>
+                                </td>
+                                <td>Working with the world's poorest people to transform their lives</td>
+                                <td>
+                                    <img src="./img/rsz_5-stars.png" class="left-block img-responsive" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><a href="GoalBubble.html">Goal</a>
+                                </td>
+                                <td>An international humanitarian agency dedicated to alleviating the suffering of the poorest of the poor.</td>
+                                <td>
+                                    <img src="./img/rsz_4-stars.png" class="left-block img-responsive" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><a href="FocusBubble.html">Focus</a>
+                                </td>
+                                <td>Works with people who are homeless or are at risk of losing their homes across Ireland.</td>
+                                <td>
+                                    <img src="./img/rsz_4-stars.png" class="left-block img-responsive" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><a href="BarnardosBubble.html">Barnardos</a>
+                                </td>
+                                <td>A children's charity who work with children and their families in Ireland</td>
+                                <td>
+                                    <img src="./img/rsz_3-stars.png" class="left-block img-responsive" />
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="row text-center">
+                    <a href="#charities" data-role="button" data-theme="b" data-icon="arrow-l" data-inline="true" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" style="background: green; color: white;" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-inline ui-btn-icon-left ui-btn-up-b"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">See all Charities</span><span class="ui-icon ui-icon-arrow-l ui-icon-shadow">&nbsp;</span></span>
+                    </a>
+
+                    <div class="col-xs-6">
+                        <div class="right-inner-addon">
+                            <i class="icon-search"></i>
+                            <input type="search" class="form-control" placeholder="Search for a charity" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Home Tab End-->
+
+
+            <!-- Charities Tab Begin-->
+            <div class="tab-pane" id="charities">
+
+                <div class="jumbotron">
+                    <h2>Charity List</h2>
+                    <p>Here you can see all the charities in our rating system and how they rank against one another. Use the filters on the left hand side to narrow down your search.</p>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-3 blog-sidebar">
+
+                        <div class="sidebar-module sidebar-module-inset">
+                            <!--<div class="filterbox">-->
+
+                            <h4>Rating:</h4>
+
+                            <!--<div class="insidefilter">-->
+                            <img src="img/1star.png" alt="" class="starbutton" />
+                            <img src="img/2star.png" alt="" class="starbutton" />
+                            <img src="img/3star.png" alt="" class="starbutton" />
+                            <img src="img/4star.png" alt="" class="starbutton" />
+                            <img src="img/5star.png" alt="" class="starbutton" />
+                            <!--                            </div>-->
+                            <h4>Sector:</h4>
+                            <!--<div class="insidefilter">-->
+                            <input type="submit" value="Arts & Culture" class="imgClass" />
+                            <input type="submit" value="Education" class="imgClass" />
+                            <input type="submit" value="Environment & Animals" class="imgClass" />
+                            <input type="submit" value="Religion" class="imgClass" />
+                            <input type="submit" value="Health" class="imgClass" />
+                            <input type="submit" value="Human Services" class="imgClass" />
+                            <input type="submit" value="International" class="imgClass" />
+                            <input type="submit" value="Public society" class="imgClass" />
+                            <!--</div>-->
+
+                            <h4>Search:</h4>
+                            <i class="icon-search"></i>
+                            <input type="search" class="form-control" placeholder="Search for a charity" />
+                            <!--</div>-->
+                        </div>
+                    </div>
+
+                    <div class="col-sm-9 blog-main">
+
+                        <div class="sidebar-module sidebar-module-inset">
+                            <div class="blog-post">
+                                <h2 class="blog-post-title"><a href="TrocaireBubble.html">Trocaire</a></h2>
+                                <p class="blog-post-meta">International</p>
+
+                                <p>Supporting people in the developing world to improve their lives, meet their basic needs and ensure their human dignity. helping communities and families to free themselves from the oppression of poverty.</p>
+
+                            </div>
+                        </div>
+                        <div class="sidebar-module sidebar-module-inset">
+                            <div class="blog-post">
+                                <h2 class="blog-post-title"><a href="ConcernBubble.html">Concern </a></h2>
+                                <p class="blog-post-meta">International</p>
+
+                                <p>Concern Worldwide works with the world's poorest people to transform their lives. An international humanitarian organisation dedicated to tackling poverty and suffering in the world’s poorest countries.</p>
+
+                            </div>
+                        </div>
+                        <div class="sidebar-module sidebar-module-inset">
+                            <div class="blog-post">
+                                <h2 class="blog-post-title"><a href="GoalBubble.html">Goal</a></h2>
+                                <p class="blog-post-meta">International</p>
+
+                                <p>GOAL is currently working in 14 countries: Ethiopia, Haiti, Honduras, India, Kenya, Malawi, Niger, Sierra Leone, Sudan, South Sudan, Syria, Uganda, Zimbabwe and the Philippines.</p>
+
+                            </div>
+                        </div>
+                        <div class="sidebar-module sidebar-module-inset">
+                            <div class="blog-post">
+                                <h2 class="blog-post-title"><a href="FocusBubble.html">Focus Ireland</a></h2>
+                                <p class="blog-post-meta">Human Services</p>
+
+                                <p>Focus Ireland works with people who are homeless or are at risk of losing their homes across Ireland. They offer individuals, and families, advice, support, education and housing to help people to have and keep a home.</p>
+
+                            </div>
+                        </div>
+                        <div class="sidebar-module sidebar-module-inset">
+                            <div class="blog-post">
+                                <h2 class="blog-post-title"><a href="BarnardosBubble.html">Barnardos</a></h2>
+                                <p class="blog-post-meta">Human Services</p>
+
+                                <p>Barnardos works directly with the children and families who need us most, providing services and support in 40 centres around the country. They also campaign for the rights of all children in Ireland, and provide training
+                                    and knowledge resources to childcare professionals.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Charities Tab End-->
+
+            <!-- Rating Tab Begin-->
+            <div class="tab-pane" id="ratingsystem">
+                <div class="jumbotron">
+                    <h2>Rating System</h2>
+                    <p>We rate charities by evaluating two broad areas of performance; their Financial Health and their Accountability & Transparency.</p>
+                    <br>
+                    <p>Our ratings show givers how efficiently we believe a charity will use their support today, how well it has sustained its programs and services over time and their level of commitment to being accountable and transparent.</p>
+                </div>
+
+
+                <div class="well">
+                    <h1>Fundraising Expenses</h1>
+                    <br>
+                    <p>Percentage of total functional expenses spent on fundraising (lower is better).</p>
+                    <br>
+
+                    <table class="table table-striped table-bordered table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Converted Score:</th>
+                                <th>10</th>
+                                <th>7.5</th>
+                                <th>5</th>
+                                <th>2.5</th>
+                                <th>0</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>% Spent on Fundraising:</td>
+                                <td>0% - 10%</td>
+                                <td>10% - 15%</td>
+                                <td>15% - 20%</td>
+                                <td>20% - 25%</td>
+                                <td>> 25%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="well">
+                    <h1>Fundraising Efficiency</h1>
+                    <br>
+                    <p>Amount a charity raises for every €1 spent on fundraising (higher is better)</p>
+                    <br>
+
+                    <table class="table table-striped table-bordered table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Converted Score:</th>
+                                <th>10</th>
+                                <th>7.5</th>
+                                <th>5</th>
+                                <th>2.5</th>
+                                <th>0</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Spend to raise €1</td>
+                                <td>>€4</td>
+                                <td>€4 – €3</td>
+                                <td>€3 – €2</td>
+                                <td>€2 - €1</td>
+                                <td>€1
+                                    <</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="well">
+                    <h1>Program Expenses</h1>
+                    <br>
+                    <p>Percentages of total functional expenses spent on charity work (higher is better).</p>
+                    <br>
+
+                    <table class="table table-striped table-bordered table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Converted Score:</th>
+                                <th>10</th>
+                                <th>7.5</th>
+                                <th>5</th>
+                                <th>2.5</th>
+                                <th>0</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>% Spent on program expenses</td>
+                                <td>>90%</td>
+                                <td>89 – 75%</td>
+                                <td>74 – 60%</td>
+                                <td>59 – 33%</td>
+                                <td>33%
+                                    <</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="well">
+                    <h1>Growth in Program Expenses</h1>
+                    <br>
+                    <p>Average of the last 3 years compared to this year.</p>
+                    <br>
+
+                    <table class="table table-striped table-bordered table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Converted Score:</th>
+                                <th>10</th>
+                                <th>7.5</th>
+                                <th>5</th>
+                                <th>2.5</th>
+                                <th>0</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Growth in Program Spend</td>
+                                <td>>5%</td>
+                                <td>5%-2.5%</td>
+                                <td>2.5% - 0%</td>
+                                <td>0% - (2.5%)</td>
+                                <td>(2.5%)
+                                    <</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="well">
+                    <h1>Financial Metrics Scorecard</h1>
+                    <br>
+
+                    <table class="table table-striped table-bordered table-condensed">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Score</th>
+                                <th>Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Fundraising Expenses</td>
+                                <td></td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Fundraising Efficiency</td>
+                                <td></td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Program Expenses</td>
+                                <td></td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>Growth in Program Expenses</td>
+                                <td></td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td></td>
+                                <td>50</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+                <div class="well">
+                    <h1>Transparency Metrics Scorecard</h1>
+                    <br>
+
+                    <table class="table table-striped table-bordered table-condensed">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Yes / No</th>
+                                <th>Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Independent Board Members</td>
+                                <td></td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>Published Financials Prepared by Independent Auditor</td>
+                                <td></td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>Published information on salaries of top staff</td>
+                                <td></td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Audited financials easy to find from the website i.e. Annual report</td>
+                                <td></td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Graphic making it easy to see where donations are going</td>
+                                <td></td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td></td>
+                                <td>50</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+                <div class="well">
+                    <h1>Award a Star Rating</h1>
+                    <br>
+                    <p>Combine the scores out of 70 in the Financial and Transparency metrics above in a graph like this to award a 0, 1, 2, 3, 4 or 5 star rating to each charity.</p>
+                    <br>
+                    <p>5 star = 91 – 100</p>
+
+                    <p>4 star = 81 – 90</p>
+
+                    <p>3 star = 71 – 80</p>
+
+                    <p>2 star = 61 – 70</p>
+
+                    <p>1 star = 50 – 59</p>
+
+                    <p>0 star = 0 - 49</p>
+
+                </div>
+
+            </div>
+            <!-- Rating Tab End-->
+
+
+            <!-- About Tab Begin-->
+            <div class="tab-pane" id="about">
+
+
+                <div class="well">
+                    <h1>OUR STORY</h1>
+                    <br>
+                    <p>We're a not-for-profit group that encourages all Irish charities to be open and accountable.</p>
+                    <br>
+                    <div class="col-sm-3 blog-sidebar">
+                        <img src="./img/Adrian-OFlynn.jpg" class="left-block img-responsive" />
+                    </div>
+                    <p>Why? We want people to be able to make informed decisions about charities. Especially, when making charitable donations. We do this by making data on charities available online in a way that is accessible and easy to understand.</p>
+                    <br>
+                    <p>We take the information that charities publish in their annual reports and standardise it. This means you can see what your favourite charity is doing with your donation. And you can compare it with other charities.</p>
+                    <br>
+                    <p>We're passionate about improving the openness of charities. The more open they are, the better for the people they help. And the better for us, their supporters.</p>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./img/OpenKnowledge.jpg" class="left-block img-responsive" />
+                    <br>
+                </div>
+
+
+            </div>
+            <!-- About Tab End-->
+
+
+
+        </div>
+        <!-- Main Content End-->
+
+        <!-- Bootstrap core JavaScript
+            ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.mobile.min.js"></script>
+
+    </div>
+</body>
+
+</html>
